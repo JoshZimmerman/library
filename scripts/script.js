@@ -21,5 +21,6 @@ function addBookToLibrary(book) {
   myLibrary.push(book);
 }
 
-const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, false);
-console.log(theHobbit);
+const exampleBook1 = new Book('The Hobbit', 'J.R.R. Tolkien', 295, "read");
+const exampleBook2 = new Book('The Lord of the Rings', 'J.R.R. Tolkien', 1137, "not read");
+

@@ -36,15 +36,59 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <section class="header">
+    <header>
       <h2 class="title">my Personal Library</h2>
-    </section>
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+    </header>
+    <main>
+      <form>
+        <div class="row">
+          <div class="six columns">
+            <label for="titleInput">Book Title</label>
+            <input class="u-full-width" type="text" id="titleInput">
+          </div>
+          <div class="six columns">
+            <label for="authorInput">Author</label>
+            <input class="u-full-width" type="text" id="authorInput">
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <label for="pagesInput">Number of Pages</label>
+            <input class="u-full-width" type="number" id="pagesInput" min="1">
+          </div>
+          <div class="three columns">
+            <label for="readInput">Status</label>
+            <select class="u-full-width" id="readInput">
+              <option value="read">Read</option>
+              <option value="not read">Not Read</option> 
+            </select>
+          </div>
+          <div class="five columns">
+            <input class="button-primary u-max-full-width u-pull-right" type="submit" value="Add Book" id="bookSubmit">
+          </div>
+        </div>
+        
+      </form>
+      <table class="twelve columns u-full-width">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      
+      <div class="row">
+        <div class="one-half column" style="margin-top: 25%">
+          <h4>Basic Page</h4>
+          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
 
 <!-- End Document
