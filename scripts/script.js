@@ -30,17 +30,18 @@ myLibrary.push(exampleBook2);
 const docTable = document.querySelector(".book-table");
 
 function populateCollection() {
-  myLibrary.forEach((book) => {
+  myLibrary.forEach((book, index) => {
     const tableRow = `
     <tr>
       <td>${book.title}</td>
       <td>${book.author}</td>
       <td>${book.pages}</td>
-      <td>${book.status}</td>
-      <td><button class="button-primary">delete</button></td>
+      <td><button class="toggle-button">${book.status}</button></td>
+      <td><button class="button-delete" id="${index}">delete</button></td>
     </tr>
     `;
     docTable.insertAdjacentHTML("afterbegin", tableRow);
   });
 }
+//Testing
 populateCollection();
