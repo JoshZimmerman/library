@@ -11,7 +11,7 @@ header {
   margin-top: 3rem;
 }
 
-.toggle-button {
+.button-toggle {
   display: inline-block;
   height: 30px;
   padding: 0 15px;
@@ -32,8 +32,8 @@ header {
   margin-bottom: 0; 
 }
 
-.toggle-button:hover,
-.toggle-button:focus {
+.button-toggle:hover,
+.button-toggle:focus {
   color: #333;
   border: 1px solid #bbb;
   outline: 0; 

@@ -45,7 +45,7 @@ function populateCollection() {
       <td>${book.title}</td>
       <td>${book.author}</td>
       <td>${book.pages}</td>
-      <td><button class="toggle-button" data-index="${index}">${book.status}</button></td>
+      <td><button class="button-toggle" data-index="${index}">${book.status}</button></td>
       <td><button class="button-delete" data-index-number="${index}">delete</button></td>
     </tr>
     `;
@@ -63,12 +63,9 @@ function resetForm() {
 }
 
 function setupToggles() {
-  let toggleButtons = document.querySelectorAll(".toggle-button");
+  let toggleButtons = document.querySelectorAll(".button-toggle");
   toggleButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      //get index from id and toggle
-      console.log(e.target.dataset.index);
-      console.log(e);
       myLibrary[e.target.dataset.index].toggleRead();
       populateCollection();
     });
@@ -79,8 +76,6 @@ function setupDeletes() {
   let delButtons = document.querySelectorAll(".button-delete");
   delButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      console.log(e.target);
-      console.log(e);
       myLibrary.splice(e.target.dataset.indexNumber, 1);
       populateCollection();
     });
