@@ -28,7 +28,8 @@ header {
   border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  margin-bottom: 0; 
 }
 
 .toggle-button:hover,
@@ -55,13 +56,14 @@ header {
   border: 1px solid;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #f03333;
-  border-color: #f03333
+  background-color: #d62e2e;
+  border-color: #d62e2e;
+  margin-bottom: 0;
 }
 
 .button-delete:hover,
 .button-delete:focus {
   color: #FFF;
-  background-color: #db1e1e;
-  border-color: #db1e1e;
+  background-color: #bd0d0d;
+  border-color: #bd0d0d;
 }
