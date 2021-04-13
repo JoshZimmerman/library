@@ -68,7 +68,6 @@ function populatePageTable() {
   });
   setupToggles();
   setupDeletes();
-  //Save to localStorage
 }
 
 function resetForm() {
@@ -76,6 +75,20 @@ function resetForm() {
   docAuthor.value = "";
   docPages.value = "";
 }
+
+function runOnLoad() {
+  checkLocalStorage();
+  populatePageTable();
+}
+
+//Set up Event Listeners
+docForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+  addBookToLibrary();
+  updateLocalStorage();
+  populatePageTable();
+  resetForm();
+});
 
 function setupToggles() {
   let toggleButtons = document.querySelectorAll(".button-toggle");
@@ -99,21 +112,8 @@ function setupDeletes() {
   });
 }
 
-function runOnLoad() {
-  checkLocalStorage();
-  populatePageTable();
-}
-
-//Testing
+//Initial page load
 runOnLoad();
 
 
-//Set up Event Listeners
-docForm.addEventListener("submit", function(e) {
-  e.preventDefault();
-  addBookToLibrary();
-  updateLocalStorage();
-  populatePageTable();
-  resetForm();
-});
 
