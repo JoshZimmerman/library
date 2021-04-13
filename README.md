@@ -3,7 +3,7 @@
 
 A library app created as a project for The Odin Project.
 
-Utilizing [Skeleton](http://getskeleton.com/) boilerplate for basic layout and design needs.
+Utilizing [Skeleton](http://getskeleton.com/) boilerplate for basic layout and design.
 
 ## Purpose
 - Using object design patterns to store books in JavaScript.
