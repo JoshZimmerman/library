@@ -1,4 +1,6 @@
 # library 
+[Live Preview](https://joshzimmerman.github.io/library/)
+
 A library app created as a project for The Odin Project.
 
 Utilizing [Skeleton](http://getskeleton.com/) boilerplate for basic layout and design needs.
